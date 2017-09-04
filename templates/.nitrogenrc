@@ -1,0 +1,21 @@
+{
+  "port": 8081,
+  "dirs": [
+    "src",
+    "static/assets"
+  ],
+  "classes": [
+  ],
+  "editors": {
+    "\\.(?!png|jpe?g|gif)[a-zA-Z0-9]*$": "unpkg:ace-nitrogen-editor",
+    "\\.(png|jpe?g|gif)$": "unpkg:image-nitrogen-viewer",
+    "^static\/assets\/shaders\/.*\\.json$": "unpkg:oxygen-shader-nitrogen-editor",
+    "^static\/assets\/(scenes|prefabs)\/.*\\.json$": "unpkg:oxygen-scene-nitrogen-editor"
+  },
+  "commands": {
+    "launch": [
+      { "url": "http://localhost" }
+    ]
+  },
+  "editOnly": false
+}

@@ -1,0 +1,27 @@
+{
+  "name": "oxygen-game",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "./node_modules/.bin/webpack-dev-server --port 8080",
+    "launch": "./node_modules/.bin/webpack-dev-server --port 80",
+    "nitro-win": "SET NITROGEN_EDITOR=true & npm run dev",
+    "nitro-unix": "export NITROGEN_EDITOR=true && npm run dev",
+    "build": "./node_modules/.bin/webpack -p",
+    "build-dev": "./node_modules/.bin/webpack",
+    "update": "npm update --save"
+  },
+  "dependencies": {
+    "babel-core": "latest",
+    "babel-loader": "latest",
+    "babel-plugin-transform-object-rest-spread": "latest",
+    "babel-polyfill": "latest",
+    "babel-preset-es2015": "latest",
+    "babel-preset-es2016": "latest",
+    "babel-preset-es2017": "latest",
+    "copy-webpack-plugin": "latest",
+    "nitrogen-webpack-plugin": "latest",
+    "oxygen-core": "latest",
+    "webpack": "latest",
+    "webpack-dev-server": "latest"
+  }
+}
