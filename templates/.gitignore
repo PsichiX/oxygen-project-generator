@@ -3,3 +3,4 @@ node_modules/
 .nitrogen/
 *.log
 *.log.*
+package-lock.json
