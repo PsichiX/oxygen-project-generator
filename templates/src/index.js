@@ -1,9 +1,6 @@
 import { lazyInitialization, System, vec4 } from 'oxygen-core';
 
 lazyInitialization({
-  asset: {
-    pathPrefix: 'assets/'
-  },
   render: { screen: 'screen-0' },
   store: { id: 'oxygen-core' }
 });
@@ -19,7 +16,9 @@ const {
 
 vec4.set(RenderSystem.clearColor, 1, 1, 1, 1);
 
-AssetSystem.load('json://config.json')
+AssetSystem.load('pack://assets.pack')
+  .then(packAsset => AssetSystem.fetchEngine = packAsset.makeFetchEngine())
+  .then(() => AssetSystem.load('json://config.json'))
   .then(configAsset => AssetSystem.loadAll(configAsset.data.assets))
   .then(() => System.events.triggerLater(
     'change-scene',

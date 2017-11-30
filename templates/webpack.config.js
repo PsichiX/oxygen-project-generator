@@ -3,6 +3,7 @@ var path = require('path');
 var process = require('process');
 var CopyWebpackPlugin = require('copy-webpack-plugin');
 var NitrogenWebpackPlugin = require('nitrogen-webpack-plugin');
+var PackWebpackPlugin = require('oxygen-core/bin-tools/pack-webpack-plugin');
 
 var BUILD_DIR = path.resolve(__dirname, 'bin');
 var APP_DIR = path.resolve(__dirname, 'src');
@@ -24,8 +25,10 @@ var config = {
   },
   plugins: [
     new CopyWebpackPlugin([
-      { from: 'static/index.html' },
-      { from: 'static/assets', to: 'assets' }
+      { from: 'static/index.html' }
+    ]),
+    new PackWebpackPlugin([
+      { input: 'static/assets' }
     ])
   ],
   devServer: {
