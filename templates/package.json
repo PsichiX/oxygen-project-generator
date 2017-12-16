@@ -1,5 +1,5 @@
 {
-  "name": "oxygen-game",
+  "name": "~oxygen-game~",
   "version": "1.0.0",
   "scripts": {
     "dev": "./node_modules/.bin/webpack-dev-server --port 8080",

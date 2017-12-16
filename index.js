@@ -14,7 +14,7 @@ shelljs.ls('-A', path.join(__dirname, 'templates')).forEach(function(file){
 });
 
 var contents = fs.readFileSync('./package.json', 'utf8');
-contents = contents.replace('oxygen-game', name);
+contents = contents.replace('~oxygen-game~', name);
 fs.writeFileSync('./package.json', contents);
 
 console.log('* install dependencies...');
@@ -26,5 +26,3 @@ shelljs.exec('npm run build', { silent: true });
 console.log('* done!');
 console.log('- `npm init` to provide project details');
 console.log('- `npm run dev` to run dev server');
-console.log('- `npm run nitro-win` to run Nitrogen IDE server on Windows');
-console.log('- `npm run nitro-unix` to run Nitrogen IDE server on Unix');

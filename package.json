@@ -1,6 +1,6 @@
 {
   "name": "oxygen-project-generator",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Oxygen Project Generator",
   "main": "index.js",
   "files": [
