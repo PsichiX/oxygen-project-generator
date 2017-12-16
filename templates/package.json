@@ -4,8 +4,6 @@
   "scripts": {
     "dev": "./node_modules/.bin/webpack-dev-server --port 8080",
     "launch": "./node_modules/.bin/webpack-dev-server --port 80",
-    "nitro-win": "SET NITROGEN_EDITOR=true & npm run dev",
-    "nitro-unix": "export NITROGEN_EDITOR=true && npm run dev",
     "build": "./node_modules/.bin/webpack -p",
     "build-dev": "./node_modules/.bin/webpack",
     "update": "npm update --save"
@@ -17,7 +15,6 @@
     "babel-polyfill": "latest",
     "babel-preset-env": "latest",
     "copy-webpack-plugin": "latest",
-    "nitrogen-webpack-plugin": "latest",
     "oxygen-core": "latest",
     "webpack": "latest",
     "webpack-dev-server": "latest"
