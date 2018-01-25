@@ -18,7 +18,7 @@ contents = contents.replace('~oxygen-game~', name);
 fs.writeFileSync('./package.json', contents);
 
 console.log('* install dependencies...');
-shelljs.exec('npm update --save', { silent: true });
+shelljs.exec('npm install --save', { silent: true });
 
 console.log('* build project...');
 shelljs.exec('npm run build', { silent: true });
