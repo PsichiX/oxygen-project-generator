@@ -1,6 +1,6 @@
 {
   "name": "oxygen-project-generator",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Oxygen Project Generator",
   "main": "index.js",
   "files": [
@@ -13,5 +13,16 @@
   "license": "MIT",
   "dependencies": {
     "shelljs": "^0.7.8"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PsichiX/oxygen-project-generator.git"
+  },
+  "keywords": [
+    "oxygen"
+  ],
+  "bugs": {
+    "url": "https://github.com/PsichiX/oxygen-project-generator/issues"
+  },
+  "homepage": "https://github.com/PsichiX/oxygen-project-generator#readme"
 }
