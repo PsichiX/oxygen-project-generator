@@ -2,22 +2,22 @@
   "name": "root",
   "components": {
     "Camera2D": {
-      "zoomOut": 600,
+      "zoomOut": 1024,
       "zoomMode": "keep-aspect"
     },
     "Sprite": {
       "shader": "shaders/sprite-transparent.json",
-      "width": 300,
-      "height": 125,
-      "xOffset": 150,
-      "yOffset": 135,
-      "overrideBaseTexture": "images/logo.png"
+      "width": -1,
+      "height": -1,
+      "xOrigin": 0.5,
+      "yOrigin": 0.5,
+      "overrideBaseTexture": "images/logo.svg"
     },
     "TextRenderer": {
       "shader": "shaders/text-outline-transparent.json",
       "font": "fonts/verdana.fnt",
       "halign": "center",
-      "valign": "top",
+      "valign": "bottom",
       "color": [1, 1, 1, 1],
       "colorOutline": [0, 0, 0, 1],
       "text": "Hello, World!"

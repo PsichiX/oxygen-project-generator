@@ -2,7 +2,7 @@
   "assets": [
     "shader://shaders/sprite-transparent.json",
     "shader://shaders/text-outline-transparent.json",
-    "image://images/logo.png",
+    "svg://images/logo.svg",
     "font://fonts/verdana.fnt",
     "scene://scenes/game.json"
   ]
