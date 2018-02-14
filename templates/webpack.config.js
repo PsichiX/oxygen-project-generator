@@ -26,7 +26,10 @@ var config = {
       { from: 'static/index.html' }
     ]),
     new PackWebpackPlugin([
-      { input: 'static/assets' }
+      { input: [
+        'static/assets',
+        '<oxygen-core>/assets'
+      ] }
     ])
   ],
   devServer: {
