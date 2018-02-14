@@ -11,13 +11,13 @@
       "height": -1,
       "xOrigin": 0.5,
       "yOrigin": 0.5,
-      "overrideBaseTexture": "images/logo.svg"
+      "overrideBaseTexture": "images/oxygen-core-logo-color.svg"
     },
     "TextRenderer": {
       "shader": "shaders/text-outline-transparent.json",
       "font": "fonts/verdana.fnt",
       "halign": "center",
-      "valign": "bottom",
+      "valign": "middle",
       "color": [1, 1, 1, 1],
       "colorOutline": [0, 0, 0, 1],
       "text": "Hello, World!"

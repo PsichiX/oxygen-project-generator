@@ -14,7 +14,7 @@ const {
 // HERE YOU REGISTER CUSTOM COMPONENTS:
 // EntitySystem.registerComponent('SomeController', SomeController.factory);
 
-vec4.set(RenderSystem.clearColor, 1, 1, 1, 1);
+vec4.set(RenderSystem.clearColor, 0.2, 0.2, 0.2, 1);
 
 AssetSystem.load('pack://assets.pack')
   .then(packAsset => AssetSystem.fetchEngine = packAsset.makeFetchEngine())
