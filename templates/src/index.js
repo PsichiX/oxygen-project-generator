@@ -2,7 +2,7 @@ import { lazyInitialization, System, vec4 } from 'oxygen-core';
 
 lazyInitialization({
   render: { screen: 'screen-0' },
-  store: { id: 'oxygen-core' }
+  store: { id: 'oxygen-game', cache: 'no-store' }
 });
 
 const {
@@ -14,7 +14,7 @@ const {
 // HERE YOU REGISTER CUSTOM COMPONENTS:
 // EntitySystem.registerComponent('SomeController', SomeController.factory);
 
-vec4.set(RenderSystem.clearColor, 0.2, 0.2, 0.2, 1);
+vec4.set(RenderSystem.clearColor, 0.175, 0.175, 0.175, 1);
 
 AssetSystem.load('pack://assets.pack')
   .then(packAsset => AssetSystem.fetchEngine = packAsset.makeFetchEngine())
