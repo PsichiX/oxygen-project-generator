@@ -11,7 +11,7 @@
       "height": -1,
       "xOrigin": 0.5,
       "yOrigin": 0.5,
-      "overrideBaseTexture": "images/oxygen-core-logo-color.svg"
+      "overrideBaseTexture": "images/oxygen-core-dark.svg"
     },
     "TextRenderer": {
       "shader": "shaders/text-outline-transparent.json",
