@@ -32,8 +32,8 @@
       },
       "components": {
         "TextRenderer": {
-          "shader": "text-outline-transparent.json",
-          "font": "verdana.fnt",
+          "shader": "shaders/text-outline-transparent.json",
+          "font": "fonts/verdana.fnt",
           "halign": "center",
           "valign": "middle",
           "color": [1, 1, 1, 1],
