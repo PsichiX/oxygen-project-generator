@@ -4,9 +4,6 @@
     "Camera2D": {
       "zoomOut": 1024,
       "zoomMode": "keep-aspect"
-    },
-    "SomeController": {
-      "speed": 0.1
     }
   },
   "children": [
