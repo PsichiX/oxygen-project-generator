@@ -5,22 +5,45 @@
       "zoomOut": 1024,
       "zoomMode": "keep-aspect"
     },
-    "Sprite": {
-      "shader": "shaders/sprite-transparent.json",
-      "width": -1,
-      "height": -1,
-      "xOrigin": 0.5,
-      "yOrigin": 0.5,
-      "overrideBaseTexture": "images/oxygen-core-dark.svg"
-    },
-    "TextRenderer": {
-      "shader": "shaders/text-outline-transparent.json",
-      "font": "fonts/verdana.fnt",
-      "halign": "center",
-      "valign": "middle",
-      "color": [1, 1, 1, 1],
-      "colorOutline": [0, 0, 0, 1],
-      "text": "Hello, World!"
+    "SomeController": {
+      "speed": 0.1
     }
-  }
+  },
+  "children": [
+    {
+      "name": "logo",
+      "transform": {
+        "scale": 0.75,
+        "position": [0, -100]
+      },
+      "components": {
+        "Sprite": {
+          "shader": "shaders/sprite-transparent.json",
+          "width": -1,
+          "height": -1,
+          "xOrigin": 0.5,
+          "yOrigin": 0.5,
+          "overrideBaseTexture": "images/oxygen-core-dark.svg"
+        }
+      }
+    },
+    {
+      "name": "hello",
+      "transform": {
+        "scale": 1.5,
+        "position": [0, 150]
+      },
+      "components": {
+        "TextRenderer": {
+          "shader": "text-outline-transparent.json",
+          "font": "verdana.fnt",
+          "halign": "center",
+          "valign": "middle",
+          "color": [1, 1, 1, 1],
+          "colorOutline": [0, 0, 0, 1],
+          "text": "Hello, World!"
+        }
+      }
+    }
+  ]
 }
