@@ -17,6 +17,7 @@
     "copy-webpack-plugin": "latest",
     "oxygen-core": "latest",
     "webpack": "latest",
+    "webpack-cli": "latest",
     "webpack-dev-server": "latest"
   }
 }

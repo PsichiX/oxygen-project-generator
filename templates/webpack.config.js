@@ -8,12 +8,13 @@ var BUILD_DIR = path.resolve(__dirname, 'bin');
 var APP_DIR = path.resolve(__dirname, 'src');
 
 var config = {
+  mode: 'production',
   entry: [
     'babel-polyfill',
     APP_DIR + '/index.js'
   ],
   module: {
-    loaders: [
+    rules: [
       { test : /\.jsx?$/, include : APP_DIR, loader : 'babel-loader' }
     ]
   },
