@@ -1,9 +1,6 @@
 {
   "assets": [
-    "shader://shaders/sprite-transparent.json",
-    "shader://shaders/text-outline-transparent.json",
-    "svg://images/oxygen-core-dark.svg",
-    "font://fonts/verdana.fnt",
+    "set://oxygen-core.json",
     "scene://scenes/game.json"
   ]
 }

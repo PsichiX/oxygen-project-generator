@@ -8,6 +8,19 @@
   },
   "children": [
     {
+      "name": "background",
+      "components": {
+        "RectangleRenderer": {
+          "shader": "shaders/color-transparent.json",
+          "width": 1500,
+          "height": 600,
+          "xOrigin": 0.5,
+          "yOrigin": 0.5,
+          "color": [1, 0, 0, 0.5]
+        }
+      }
+    },
+    {
       "name": "logo",
       "transform": {
         "scale": 0.75,
