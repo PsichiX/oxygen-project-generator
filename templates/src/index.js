@@ -2,7 +2,8 @@ import { lazyInitialization, System, vec4 } from 'oxygen-core';
 
 lazyInitialization({
   render: { screen: 'screen-0' },
-  store: { id: 'oxygen-game', cache: 'no-store' }
+  asset: { fetchOptions: { cache: 'no-store' } },
+  store: { id: 'oxygen-game' }
 });
 
 const {
