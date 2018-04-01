@@ -15,13 +15,12 @@ const {
 // HERE YOU REGISTER CUSTOM COMPONENTS:
 // EntitySystem.registerComponent('SomeController', SomeController.factory);
 
-vec4.set(RenderSystem.clearColor, 0.175, 0.175, 0.175, 1);
+vec4.set(RenderSystem.clearColor, 0.175, 0.175, 0.175, 0);
 
-AssetSystem.load('pack://assets.pack')
-  .then(packAsset => AssetSystem.fetchEngine = packAsset.makeFetchEngine())
-  .then(() => AssetSystem.load('json://config.json'))
-  .then(configAsset => AssetSystem.loadAll(configAsset.data.assets))
-  .then(() => System.events.triggerLater(
-    'change-scene',
-    'scene://scenes/game.json'
-  ));
+(async () => {
+  const packAsset = await AssetSystem.load('pack://assets.pack');
+  AssetSystem.fetchEngine = packAsset.makeFetchEngine();
+  const configAsset = await AssetSystem.load('json://config.json');
+  await AssetSystem.loadAll(configAsset.data.assets);
+  System.events.triggerLater('change-scene', 'scene://scenes/game.json');
+})();
