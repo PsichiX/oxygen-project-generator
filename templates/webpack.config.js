@@ -10,7 +10,7 @@ var APP_DIR = path.resolve(__dirname, 'src');
 var config = {
   mode: 'development',
   entry: [
-    'babel-polyfill',
+    '@babel/polyfill',
     APP_DIR + '/index.js'
   ],
   module: {

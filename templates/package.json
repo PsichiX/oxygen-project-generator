@@ -9,13 +9,13 @@
     "update": "npm update --save"
   },
   "dependencies": {
-    "babel-core": "latest",
-    "babel-loader": "latest",
-    "babel-plugin-transform-object-rest-spread": "latest",
-    "babel-polyfill": "latest",
-    "babel-preset-env": "latest",
-    "copy-webpack-plugin": "latest",
+    "@babel/core": "latest",
+    "@babel/plugin-proposal-object-rest-spread": "latest",
+    "@babel/polyfill": "latest",
+    "@babel/preset-env": "latest",
     "oxygen-core": "latest",
+    "babel-loader": "latest",
+    "copy-webpack-plugin": "latest",
     "webpack": "latest",
     "webpack-cli": "latest",
     "webpack-dev-server": "latest"
