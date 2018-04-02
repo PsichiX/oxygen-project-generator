@@ -14,7 +14,7 @@
     "@babel/polyfill": "latest",
     "@babel/preset-env": "latest",
     "oxygen-core": "latest",
-    "babel-loader": "latest",
+    "babel-loader@^8.0.0-beta": "latest",
     "copy-webpack-plugin": "latest",
     "webpack": "latest",
     "webpack-cli": "latest",
