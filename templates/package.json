@@ -9,10 +9,10 @@
     "update": "npm update --save"
   },
   "dependencies": {
-    "@babel/core": "latest",
-    "@babel/plugin-proposal-object-rest-spread": "latest",
-    "@babel/polyfill": "latest",
-    "@babel/preset-env": "latest",
+    "@babel/core": "^7.0.0-beta",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta",
+    "@babel/polyfill": "^7.0.0-beta",
+    "@babel/preset-env": "^7.0.0-beta",
     "oxygen-core": "latest",
     "babel-loader": "^8.0.0-beta",
     "copy-webpack-plugin": "latest",
