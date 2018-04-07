@@ -4,7 +4,32 @@ var path = require('path');
 var shelljs = require('shelljs');
 var fs = require('fs');
 var process = require('process');
-var name = process.argv[2] || process.argv[1] || 'oxygen-game';
+var args = process.argv;
+var argc = args.length;
+var argMode = null;
+var name = 'oxygen-game';
+
+for (var i = 1; i < argc; ++i) {
+  var arg = args[i];
+  if (!argMode) {
+    if (arg === '--help' || arg === '-h') {
+      console.log('Usage:\n\toxy-gen -n project-name\n');
+      console.log('Params:');
+      console.log('\t-v|--version\t- Version.');
+      console.log('\t-h|--help\t- Help message.');
+      console.log('\t-n|--name\t- Project name (NPM compatible: [a-zA-Z0-9-]+).');
+      return;
+    } else if (arg === '-v' || arg === '--version') {
+      console.log(require(__dirname + '/package.json').version);
+      return;
+    } else if (arg === '--name' || arg === '-n') {
+      argMode = 'name';
+    }
+  } else if (argMode === 'name') {
+    name = arg;
+    argMode = null;
+  }
+}
 
 console.log('Generate project: ' + name);
 
