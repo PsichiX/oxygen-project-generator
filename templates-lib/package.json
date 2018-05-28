@@ -1,0 +1,18 @@
+{
+  "name": "~oxygen-lib~",
+  "version": "1.0.0",
+  "scripts": {
+    "clean": "rm -rf bin",
+    "build": "./node_modules/.bin/webpack -p",
+    "rebuild": "npm run clean && npm run build",
+    "update": "npm update --save"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta",
+    "@babel/preset-env": "^7.0.0-beta",
+    "babel-loader": "^8.0.0-beta",
+    "webpack": "latest",
+    "webpack-cli": "latest"
+  }
+}

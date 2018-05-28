@@ -1,6 +1,5 @@
 var webpack = require('webpack');
 var path = require('path');
-var process = require('process');
 var CopyWebpackPlugin = require('copy-webpack-plugin');
 var PackWebpackPlugin = require('oxygen-core/bin-tools/pack-webpack-plugin');
 
@@ -11,32 +10,32 @@ var config = {
   mode: 'development',
   entry: [
     '@babel/polyfill',
-    APP_DIR + '/index.js'
+    APP_DIR + '/index.js',
   ],
   module: {
     rules: [
-      { test : /\.jsx?$/, include : APP_DIR, loader : 'babel-loader' }
-    ]
+      { test : /\.jsx?$/, include : APP_DIR, loader : 'babel-loader' },
+    ],
   },
   output: {
     path: BUILD_DIR,
-    filename: 'app.js'
+    filename: 'app.js',
   },
   plugins: [
     new CopyWebpackPlugin([
-      { from: 'static/index.html' }
+      { from: 'static/index.html' },
     ]),
     new PackWebpackPlugin([
       { input: [
         'static/assets',
-        '<oxygen-core>/assets'
-      ] }
-    ])
+        '<oxygen-core>/assets',
+      ] },
+    ]),
   ],
   devServer: {
     contentBase: path.resolve(__dirname, './src'),
   },
-  devtool: 'source-map'
+  devtool: 'source-map',
 };
 
 module.exports = config;

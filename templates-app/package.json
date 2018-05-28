@@ -4,8 +4,10 @@
   "scripts": {
     "dev": "./node_modules/.bin/webpack-dev-server --port 8080",
     "launch": "./node_modules/.bin/webpack-dev-server --port 80",
+    "clean": "rm -rf bin",
     "build": "./node_modules/.bin/webpack -p",
     "build-dev": "./node_modules/.bin/webpack",
+    "rebuild": "npm run clean && npm run build",
     "update": "npm update --save"
   },
   "dependencies": {
