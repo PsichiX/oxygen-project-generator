@@ -44,7 +44,7 @@ for (var i = 1; i < argc; ++i) {
   }
 }
 
-var templates = lib ? 'templates-lib' : 'library-app';
+var templates = lib ? 'templates-lib' : 'templates-app';
 
 console.log('Generate project: ' + name);
 console.log(lib ? '- mode: library' : '- mode: application');
