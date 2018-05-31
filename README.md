@@ -1,7 +1,7 @@
 # Oxygen Project Generator
 
 ## Wat?
-This package is used to generate base [Oxygen](https://github.com/PsichiX/Oxygen)
+This package is used to generate base [Oxygen Core](http://oxygencore.io)
 game or plugin project structure, prepare and install its dependencies like Webpack
 and setup it for live development and production builds.
 
