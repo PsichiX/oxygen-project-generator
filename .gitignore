@@ -1,4 +1,5 @@
 bin/
+tests/
 node_modules/
 *.log
 *.log.*
