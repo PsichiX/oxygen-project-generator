@@ -1,6 +1,6 @@
 {
   "name": "oxygen-project-generator",
-  "version": "1.0.29",
+  "version": "1.0.30",
   "description": "Oxygen Project Generator",
   "main": "index.js",
   "scripts": {
@@ -15,7 +15,7 @@
   "author": "Patryk 'PsichiX' Budzynski <psichix@gmail.com> (http://psichix.io)",
   "license": "MIT",
   "dependencies": {
-    "shelljs": "^0.7.8"
+    "shelljs": "^0.8.2"
   },
   "repository": {
     "type": "git",

@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+mkdir tests
 cd tests
 mkdir app
 mkdir lib
