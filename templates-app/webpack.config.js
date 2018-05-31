@@ -7,7 +7,7 @@ var BUILD_DIR = path.resolve(__dirname, 'bin');
 var APP_DIR = path.resolve(__dirname, 'src');
 
 var config = {
-  mode: 'development',
+  mode: 'production',
   entry: [
     '@babel/polyfill',
     APP_DIR + '/index.js',
@@ -33,7 +33,7 @@ var config = {
     ]),
   ],
   devServer: {
-    contentBase: path.resolve(__dirname, './src'),
+    contentBase: APP_DIR,
   },
   devtool: 'source-map',
 };
