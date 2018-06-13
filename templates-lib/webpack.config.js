@@ -5,7 +5,7 @@ var BUILD_DIR = path.resolve(__dirname, 'bin');
 var APP_DIR = path.resolve(__dirname, 'src');
 
 var config = {
-  mode: 'production',
+  mode: 'development',
   entry: [
     APP_DIR + '/index.js',
   ],
