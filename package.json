@@ -1,13 +1,15 @@
 {
   "name": "oxygen-project-generator",
-  "version": "1.0.32",
+  "version": "1.0.33",
   "description": "Oxygen Project Generator",
   "main": "index.js",
   "scripts": {
     "test": "sh ./test.sh"
   },
   "files": [
-    "templates"
+    "templates-app",
+    "templates-lib",
+    "test.sh"
   ],
   "bin": {
     "oxy-gen": "./index.js"
