@@ -8,10 +8,10 @@
     "update": "npm update --save"
   },
   "devDependencies": {
-    "@babel/core": "^7.0.0-beta",
-    "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta",
-    "@babel/preset-env": "^7.0.0-beta",
-    "babel-loader": "^8.0.0-beta",
+    "@babel/core": "latest",
+    "@babel/plugin-proposal-object-rest-spread": "latest",
+    "@babel/preset-env": "latest",
+    "babel-loader": "latest",
     "webpack": "latest",
     "webpack-cli": "latest"
   }
